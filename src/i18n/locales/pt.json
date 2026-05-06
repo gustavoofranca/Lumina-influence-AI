@@ -1,0 +1,113 @@
+{
+  "app": {
+    "name": "Lumina Influence AI",
+    "tagline": "Pare de queimar verba com métricas de vaidade.",
+    "description": "Auditoria de performance de influenciadores digitais com IA multimodal."
+  },
+  "common": {
+    "login": "Entrar",
+    "logout": "Sair",
+    "signup": "Cadastrar",
+    "email": "E-mail",
+    "password": "Senha",
+    "confirmPassword": "Confirmar senha",
+    "name": "Nome",
+    "company": "Empresa",
+    "search": "Buscar",
+    "cancel": "Cancelar",
+    "save": "Salvar",
+    "continue": "Continuar",
+    "back": "Voltar",
+    "next": "Próximo",
+    "loading": "Carregando...",
+    "language": "Idioma",
+    "português": "Português",
+    "english": "English"
+  },
+  "welcome": {
+    "label": "Etapa 0 — Setup concluído",
+    "title": "Bem-vindo ao",
+    "subtitle": "Base do front-end pronta. Identidade visual aplicada, i18n funcionando, design tokens carregados.",
+    "stack": "React • Vite • Tailwind • i18next",
+    "switchLanguage": "Trocar idioma",
+    "fontShowcase": "Demonstração tipográfica",
+    "fontDisplayDesc": "Plus Jakarta Sans — usado em headlines e display.",
+    "fontBodyDesc": "Inter — usado em corpo de texto, labels e UI. Esta fonte equilibra legibilidade e densidade informacional, ideal para um produto enterprise.",
+    "paletteTitle": "Paleta oficial",
+    "colors": {
+      "primary": "Violeta — CTAs, destaques, links ativos",
+      "secondary": "Azul cyan — dados positivos, gráficos",
+      "tertiary": "Rosa coral — alertas, perigo, bot detection",
+      "neutral": "Azul-marinho — background base"
+    }
+  },
+  "status": {
+    "systemActive": "SYSTEM ACTIVE",
+    "operational": "SYSTEM STATUS: OPERATIONAL",
+    "liveSync": "LIVE SYNC",
+    "neuralCore": "NEURAL CORE ONLINE"
+  },
+  "ds": {
+    "title": "Sistema de Design",
+    "subtitle": "Biblioteca interna de componentes da Lumina Influence AI. Use esta página para validar variantes, estados e acessibilidade antes de levar ao produto.",
+    "label": "Etapa 1 — Componentes base",
+    "back": "Voltar para boas-vindas",
+    "openModal": "Abrir modal",
+    "closeModal": "Fechar",
+    "searchPlaceholder": "Analisar criador...",
+    "tableEmpty": "Nenhum influenciador corresponde aos filtros.",
+    "modalTitle": "Vincular nova conta",
+    "modalBody": "Selecione a plataforma para iniciar o fluxo de OAuth oficial. Suas credenciais nunca são armazenadas em texto plano.",
+    "modalConfirm": "Conectar Instagram",
+    "sections": {
+      "buttons": "Botões",
+      "buttonsDesc": "Quatro variantes oficiais do Figma: primary (com glow), secondary, inverted e outlined.",
+      "iconButtons": "Botões de ícone",
+      "iconButtonsDesc": "Botão quadrado arredondado para toolbars, topbars e ações compactas.",
+      "inputs": "Campos de formulário",
+      "inputsDesc": "Inputs com label uppercase, ícone à esquerda e estado de erro.",
+      "search": "Busca",
+      "searchDesc": "Variante específica para o campo de pesquisa do header.",
+      "cards": "Cards",
+      "cardsDesc": "Card padrão e variante glassmorphism. Hoverable opcional.",
+      "kpis": "KPIs",
+      "kpisDesc": "Indicador composto: label, valor grande em font-display, variação % e barra de progresso opcional.",
+      "badges": "Badges",
+      "badgesDesc": "Pills semânticas. Use organic/paid para diferenciar tráfego, danger para alertas de bot.",
+      "avatars": "Avatares",
+      "avatarsDesc": "Circular com fallback de iniciais coloridas determinísticas pelo nome.",
+      "modal": "Modal",
+      "modalDesc": "Overlay com blur, animação fade+scale, fecha em ESC e clique fora.",
+      "tooltip": "Tooltip",
+      "tooltipDesc": "Hover/focus simples nas quatro posições.",
+      "tabs": "Tabs",
+      "tabsDesc": "Variantes underline (com indicador animado) e pills (segmented control).",
+      "table": "Tabela",
+      "tableDesc": "Header com label uppercase, hover suave e suporte a render customizado.",
+      "skeleton": "Skeleton",
+      "skeletonDesc": "Placeholder com shimmer enquanto dados carregam.",
+      "status": "Status & Idioma",
+      "statusDesc": "Indicador pulsante e seletor de idioma para topbars.",
+      "progress": "Barras de progresso",
+      "progressDesc": "Variantes com gradiente brand e gradiente danger."
+    },
+    "tabs": {
+      "overview": "Visão geral",
+      "posts": "Posts analisados",
+      "diagnosis": "Diagnóstico IA",
+      "history": "Histórico"
+    },
+    "kpis": {
+      "roi": "ROI Total",
+      "engagement": "Taxa de engajamento real",
+      "cac": "CAC",
+      "active": "Influenciadores ativos"
+    },
+    "table": {
+      "creator": "Criador",
+      "platform": "Plataforma",
+      "score": "Score IA",
+      "status": "Status"
+    }
+  }
+}

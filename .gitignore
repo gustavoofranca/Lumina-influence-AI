@@ -1,0 +1,55 @@
+# Dependências
+node_modules/
+.pnp
+.pnp.js
+
+# Build / dist
+dist/
+dist-ssr/
+build/
+*.local
+
+# Cache
+.vite/
+.cache/
+.eslintcache
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+logs/
+*.log
+
+# Variáveis de ambiente
+.env
+.env.local
+.env.*.local
+
+# Editor / SO
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+.DS_Store
+Thumbs.db
+
+# Coverage / testes
+coverage/
+.nyc_output/
+
+# Notas pessoais
+.claude/
+CLAUDE.md
+next.txt
+
+# Imagens (referencias locais - nao versionar)
+*.webp
+*.png
+*.jpg
+*.jpeg
+*.gif
+# Permitir assets reais do produto quando existirem
+!src/assets/**
+!public/**

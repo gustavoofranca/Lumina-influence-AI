@@ -1,0 +1,87 @@
+import { Loader2 } from 'lucide-react'
+
+import { cn } from '../../lib/cn.js'
+
+/**
+ * Button — 4 variantes oficiais (Figma):
+ * - primary  : bg-primary-600 + glow violeta
+ * - secondary: bg-neutral-800 (acoes secundarias)
+ * - inverted : bg branco + texto escuro (CTAs em fundo escuro destacado)
+ * - outlined : transparente + borda primary + texto primary
+ */
+const VARIANTS = {
+  primary: cn(
+    'bg-primary-600 text-white shadow-glow-primary',
+    'hover:bg-primary-500 hover:shadow-[0_0_28px_rgba(124,58,237,0.55)]',
+    'active:bg-primary-700'
+  ),
+  secondary: cn(
+    'bg-neutral-800 text-neutral-100 ring-1 ring-inset ring-neutral-700',
+    'hover:bg-neutral-700 hover:ring-neutral-600',
+    'active:bg-neutral-800'
+  ),
+  inverted: cn(
+    'bg-white text-neutral-900',
+    'hover:bg-neutral-200',
+    'active:bg-neutral-300'
+  ),
+  outlined: cn(
+    'bg-transparent text-primary-300 ring-1 ring-inset ring-primary-500/60',
+    'hover:bg-primary-600/10 hover:text-primary-200 hover:ring-primary-400',
+    'active:bg-primary-600/20'
+  ),
+}
+
+const SIZES = {
+  sm: 'h-8  px-3 text-xs gap-1.5  rounded-xl',
+  md: 'h-10 px-4 text-sm gap-2    rounded-xl',
+  lg: 'h-12 px-6 text-base gap-2.5 rounded-2xl',
+}
+
+const ICON_SIZE = { sm: 14, md: 16, lg: 18 }
+
+export default function Button({
+  children,
+  variant = 'primary',
+  size = 'md',
+  leftIcon: LeftIcon = null,
+  rightIcon: RightIcon = null,
+  loading = false,
+  disabled = false,
+  fullWidth = false,
+  type = 'button',
+  className = '',
+  ...rest
+}) {
+  const isDisabled = disabled || loading
+  const iconSize = ICON_SIZE[size]
+
+  return (
+    <button
+      type={type}
+      disabled={isDisabled}
+      className={cn(
+        'inline-flex select-none items-center justify-center font-semibold',
+        'transition-all duration-200 ease-out',
+        'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-400 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-base',
+        'disabled:cursor-not-allowed disabled:opacity-50 disabled:shadow-none',
+        SIZES[size],
+        VARIANTS[variant],
+        fullWidth && 'w-full',
+        className
+      )}
+      aria-busy={loading || undefined}
+      {...rest}
+    >
+      {loading ? (
+        <Loader2 size={iconSize} className="animate-spin" />
+      ) : LeftIcon ? (
+        <LeftIcon size={iconSize} />
+      ) : null}
+
+      <span>{children}</span>
+
+      {RightIcon && !loading ? <RightIcon size={iconSize} /> : null}
+    </button>
+  )
+}

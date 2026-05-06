@@ -1,0 +1,113 @@
+{
+  "app": {
+    "name": "Lumina Influence AI",
+    "tagline": "Stop burning budget on vanity metrics.",
+    "description": "Influencer performance auditing powered by multimodal AI."
+  },
+  "common": {
+    "login": "Sign in",
+    "logout": "Sign out",
+    "signup": "Sign up",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm password",
+    "name": "Name",
+    "company": "Company",
+    "search": "Search",
+    "cancel": "Cancel",
+    "save": "Save",
+    "continue": "Continue",
+    "back": "Back",
+    "next": "Next",
+    "loading": "Loading...",
+    "language": "Language",
+    "português": "Português",
+    "english": "English"
+  },
+  "welcome": {
+    "label": "Stage 0 — Setup complete",
+    "title": "Welcome to",
+    "subtitle": "Front-end foundation is ready. Brand identity applied, i18n working, design tokens loaded.",
+    "stack": "React • Vite • Tailwind • i18next",
+    "switchLanguage": "Switch language",
+    "fontShowcase": "Type showcase",
+    "fontDisplayDesc": "Plus Jakarta Sans — used for headlines and display copy.",
+    "fontBodyDesc": "Inter — used for body, labels and UI. This typeface balances readability and information density, ideal for an enterprise product.",
+    "paletteTitle": "Official palette",
+    "colors": {
+      "primary": "Violet — CTAs, highlights, active links",
+      "secondary": "Cyan blue — positive data, charts",
+      "tertiary": "Coral pink — alerts, danger, bot detection",
+      "neutral": "Deep navy — base background"
+    }
+  },
+  "status": {
+    "systemActive": "SYSTEM ACTIVE",
+    "operational": "SYSTEM STATUS: OPERATIONAL",
+    "liveSync": "LIVE SYNC",
+    "neuralCore": "NEURAL CORE ONLINE"
+  },
+  "ds": {
+    "title": "Design System",
+    "subtitle": "Internal component library for Lumina Influence AI. Use this page to validate variants, states and accessibility before shipping to product.",
+    "label": "Stage 1 — Base components",
+    "back": "Back to welcome",
+    "openModal": "Open modal",
+    "closeModal": "Close",
+    "searchPlaceholder": "Analyze creator...",
+    "tableEmpty": "No influencer matches the filters.",
+    "modalTitle": "Connect new account",
+    "modalBody": "Pick a platform to start the official OAuth flow. Your credentials are never stored in plain text.",
+    "modalConfirm": "Connect Instagram",
+    "sections": {
+      "buttons": "Buttons",
+      "buttonsDesc": "Four official Figma variants: primary (with glow), secondary, inverted and outlined.",
+      "iconButtons": "Icon buttons",
+      "iconButtonsDesc": "Square rounded button for toolbars, topbars and compact actions.",
+      "inputs": "Form fields",
+      "inputsDesc": "Inputs with uppercase label, left icon and error state.",
+      "search": "Search",
+      "searchDesc": "Specialized variant for the header search field.",
+      "cards": "Cards",
+      "cardsDesc": "Default card and glassmorphism variant. Hoverable optional.",
+      "kpis": "KPIs",
+      "kpisDesc": "Composite indicator: label, large display value, % change and optional progress bar.",
+      "badges": "Badges",
+      "badgesDesc": "Semantic pills. Use organic/paid to differentiate traffic, danger for bot alerts.",
+      "avatars": "Avatars",
+      "avatarsDesc": "Circular with deterministic colored initials fallback.",
+      "modal": "Modal",
+      "modalDesc": "Blurred overlay, fade+scale animation, closes on ESC and overlay click.",
+      "tooltip": "Tooltip",
+      "tooltipDesc": "Simple hover/focus on all four positions.",
+      "tabs": "Tabs",
+      "tabsDesc": "Underline (with animated indicator) and pills (segmented control) variants.",
+      "table": "Table",
+      "tableDesc": "Header with uppercase label, soft hover and custom render support.",
+      "skeleton": "Skeleton",
+      "skeletonDesc": "Placeholder with shimmer while data is loading.",
+      "status": "Status & Language",
+      "statusDesc": "Pulsing indicator and language switcher for topbars.",
+      "progress": "Progress bars",
+      "progressDesc": "Brand gradient and danger gradient variants."
+    },
+    "tabs": {
+      "overview": "Overview",
+      "posts": "Analyzed posts",
+      "diagnosis": "AI Diagnosis",
+      "history": "History"
+    },
+    "kpis": {
+      "roi": "Total ROI",
+      "engagement": "Real engagement rate",
+      "cac": "CAC",
+      "active": "Active influencers"
+    },
+    "table": {
+      "creator": "Creator",
+      "platform": "Platform",
+      "score": "AI Score",
+      "status": "Status"
+    }
+  }
+}
