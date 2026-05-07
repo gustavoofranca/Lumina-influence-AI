@@ -109,5 +109,68 @@
       "score": "Score IA",
       "status": "Status"
     }
+  },
+  "landing": {
+    "nav": {
+      "solutions": "Soluções", "pricing": "Preços", "cases": "Cases", "api": "API",
+      "login": "Entrar", "cta": "Começar agora"
+    },
+    "hero": {
+      "label": "THE NEURAL ARCHITECT",
+      "h1": "Pare de queimar verba com métricas de vaidade.",
+      "subtitle": "Audite influenciadores com IA multimodal. Separe alcance orgânico de tráfego pago. Comprove ROI real.",
+      "ctaPrimary": "Agendar Demonstração",
+      "ctaSecondary": "Ver Documentação",
+      "mockup": {
+        "name": "Marina Costa", "handle": "@marinacosta",
+        "followers": "1.2M seguidores · Instagram", "badge": "ORGANIC",
+        "sentimentLabel": "SENTIMENT ANALYSIS",
+        "positiveLabel": "positivo", "suspiciousLabel": "suspeito",
+        "alertTitle": "⚡ IA DETECTOU • Bot-Farm", "alertId": "Análise ID: #PX-9921"
+      }
+    },
+    "logos": { "label": "AUTHORIZED OFFICIAL PARTNER INTEGRATIONS" },
+    "comparativo": {
+      "label": "PROBLEMA",
+      "title": "Métricas sem auditoria são prejuízo oculto",
+      "chaos": {
+        "title": "O Caos Manual", "badge": "42% ROI Desperdiçado",
+        "items": ["Métricas de vaidade sem contexto real", "Impossível separar orgânico de pago", "Bots inflam engajamento artificialmente", "Relatórios manuais lentos e imprecisos", "ROI calculado por suposição"]
+      },
+      "lumina": {
+        "title": "Inteligência Lumina", "badge": "12x Mais Insights",
+        "items": ["Auditoria multimodal com IA em tempo real", "Separação automática orgânico vs pago", "Detecção de bots com score de confiança", "Relatórios gerados em segundos", "ROI comprovado com dados reais"]
+      }
+    },
+    "pilares": {
+      "label": "COMO FUNCIONA", "title": "Arquitetura Neural em 3 Pilares",
+      "items": [
+        { "title": "Official API Integration", "desc": "Conexão direta com APIs oficiais de Instagram, TikTok e YouTube via OAuth 2.0. Dados em tempo real, sem scraping." },
+        { "title": "Qualitative AI Analysis", "desc": "Google Gemini analisa sentimento, qualidade de roteiro, coerência de nicho e detecta padrões de engajamento suspeito." },
+        { "title": "Real ROI Dashboards", "desc": "Dashboards interativos que comprovam ROI real. Compare influenciadores e exporte relatórios em PDF." }
+      ]
+    },
+    "plans": {
+      "label": "PLANOS", "title": "Investimento com Inteligência",
+      "agency": {
+        "badge": "MAIS POPULAR", "name": "Plano Agência",
+        "price": "R$ 1.297", "period": "/mês", "cta": "Começar agora",
+        "features": ["Até 50 influenciadores", "500 análises IA/mês", "Benchmarking entre criadores", "Exportação de relatórios PDF", "Suporte prioritário", "Dashboard em tempo real"]
+      },
+      "enterprise": {
+        "name": "Enterprise", "price": "Sob consulta", "cta": "Falar com time",
+        "features": ["Influenciadores ilimitados", "Análises IA ilimitadas", "API dedicada com SLA", "Gerente de conta dedicado", "Integrações customizadas", "Treinamento da equipe"]
+      }
+    },
+    "footer": {
+      "tagline": "Pare de queimar verba com métricas de vaidade.",
+      "product": "Product", "company": "Company",
+      "copyright": "© 2025 Lumina Influence AI. Todos os direitos reservados.",
+      "backToTop": "↑ Voltar ao topo",
+      "links": {
+        "solutions": "Soluções", "pricing": "Preços", "cases": "Cases", "api": "API",
+        "about": "Sobre", "blog": "Blog", "careers": "Carreiras", "legal": "Legal"
+      }
+    }
   }
 }

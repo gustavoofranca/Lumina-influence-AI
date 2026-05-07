@@ -39,10 +39,14 @@ Thumbs.db
 coverage/
 .nyc_output/
 
+# Sessoes de brainstorming local
+.superpowers/
+
 # Notas pessoais
 .claude/
 CLAUDE.md
 next.txt
+docs
 
 # Imagens (referencias locais - nao versionar)
 *.webp
