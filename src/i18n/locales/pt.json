@@ -173,6 +173,30 @@
       }
     }
   },
+  "app": {
+    "nav": {
+      "dashboard":       "Visão Geral",
+      "influenciadores": "Influenciadores",
+      "campanhas":       "Campanhas",
+      "diagnostico":     "Diagnóstico IA",
+      "relatorios":      "Relatórios",
+      "configuracoes":   "Configurações",
+      "suporte":         "Suporte"
+    },
+    "sidebar": {
+      "version":     "ENTERPRISE V2.4",
+      "newCampaign": "Nova Campanha"
+    },
+    "topbar": {
+      "searchPlaceholder": "Analisar criador...",
+      "upgrade":           "Upgrade",
+      "notifications":     "Notificações",
+      "help":              "Ajuda",
+      "profile":           "Meu perfil",
+      "settings":          "Configurações",
+      "logout":            "Sair"
+    }
+  },
   "auth": {
     "login": {
       "title": "Bem-vindo de volta",
