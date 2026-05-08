@@ -173,6 +173,128 @@
       }
     }
   },
+  "campanhas": {
+    "list": {
+      "title":     "Campanhas",
+      "subtitle":  "Gerencie campanhas, orçamentos e performance dos criadores.",
+      "newButton": "Nova Campanha",
+      "search":    "Buscar campanha por marca ou nome...",
+      "filterAll": "Todas",
+      "empty": {
+        "title":    "Nenhuma campanha encontrada",
+        "subtitle": "Crie sua primeira campanha para começar a auditar criadores em conjunto."
+      },
+      "card": {
+        "influencers_one":   "{{count}} criador",
+        "influencers_other": "{{count}} criadores",
+        "budget":            "Orçamento",
+        "period":            "Período",
+        "progress":          "Progresso"
+      }
+    },
+    "status": {
+      "active":    "Ativa",
+      "planning":  "Planejamento",
+      "paused":    "Pausada",
+      "completed": "Concluída"
+    },
+    "detail": {
+      "back": "Campanhas",
+      "header": {
+        "industry": "Setor",
+        "period":   "Período",
+        "budget":   "Orçamento",
+        "posts":    "Posts",
+        "reach":    "Alcance total",
+        "sentiment": "Sentimento médio"
+      },
+      "actions": {
+        "generateReport": "Gerar Relatório",
+        "edit":           "Editar campanha"
+      },
+      "participants": {
+        "title":    "Influenciadores da campanha",
+        "subtitle": "KPIs resumidos por criador",
+        "posts":    "posts",
+        "cost":     "investido"
+      },
+      "benchmark": {
+        "title":    "Benchmarking",
+        "subtitle": "Comparativo lado a lado dos criadores",
+        "columns": {
+          "creator":      "Criador",
+          "totalReach":   "Alcance",
+          "organic":      "% Orgânico",
+          "paid":         "% Pago",
+          "engagement":   "Engajamento",
+          "sentiment":    "Sentimento",
+          "score":        "Score IA",
+          "cost":         "Custo"
+        }
+      },
+      "radar": {
+        "title":    "Radar de Performance",
+        "subtitle": "Comparação multidimensional dos criadores",
+        "axes": {
+          "brandCoherence":  "Brand Coherence",
+          "sentimentIndex":  "Sentiment",
+          "resonanceScore":  "Resonance",
+          "engagement":      "Engagement",
+          "organicReach":    "Organic Reach",
+          "botSafety":       "Bot Safety"
+        }
+      }
+    },
+    "wizard": {
+      "back":         "Voltar",
+      "title":        "Nova Campanha",
+      "subtitle":     "Crie uma campanha em três passos rápidos.",
+      "stepLabel":    "Passo {{step}} de {{total}}",
+      "next":         "Continuar",
+      "previous":     "Voltar",
+      "create":       "Criar campanha",
+      "step1": {
+        "label":      "Detalhes",
+        "title":      "Detalhes da campanha",
+        "subtitle":   "Defina marca, período e orçamento.",
+        "name":       "Nome da campanha",
+        "namePh":     "Verão 2026 — Tech Lifestyle",
+        "brand":      "Marca cliente",
+        "brandPh":    "NovaTech Pro",
+        "industry":   "Setor",
+        "industryPh": "Tecnologia",
+        "startDate":  "Início",
+        "endDate":    "Fim",
+        "budget":     "Orçamento (R$)",
+        "budgetPh":   "240000",
+        "description": "Descrição (opcional)",
+        "descriptionPh": "Resumo da estratégia e objetivos da campanha..."
+      },
+      "step2": {
+        "label":    "Influenciadores",
+        "title":    "Selecionar influenciadores",
+        "subtitle": "Escolha os criadores que participarão da campanha.",
+        "search":   "Buscar criador por nome ou @...",
+        "selected_one":   "{{count}} selecionado",
+        "selected_other": "{{count}} selecionados",
+        "selectAtLeastOne": "Selecione ao menos um influenciador."
+      },
+      "step3": {
+        "label":    "Confirmação",
+        "title":    "Revisar e criar",
+        "subtitle": "Confira os detalhes antes de finalizar a campanha.",
+        "totalBudget":      "Orçamento total",
+        "perInfluencer":    "Custo médio por criador",
+        "estimatedReach":   "Alcance estimado",
+        "createdSuccess":   "Campanha criada com sucesso!"
+      },
+      "errors": {
+        "required":      "Campo obrigatório.",
+        "invalidPeriod": "A data de início deve ser anterior à data de fim.",
+        "invalidBudget": "O orçamento deve ser maior que zero."
+      }
+    }
+  },
   "influenciador": {
     "header": {
       "deepAnalysis":     "DEEP ANALYSIS",

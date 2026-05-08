@@ -173,6 +173,128 @@
       }
     }
   },
+  "campanhas": {
+    "list": {
+      "title":     "Campaigns",
+      "subtitle":  "Manage campaigns, budgets and creator performance.",
+      "newButton": "New Campaign",
+      "search":    "Search campaigns by brand or name...",
+      "filterAll": "All",
+      "empty": {
+        "title":    "No campaigns found",
+        "subtitle": "Create your first campaign to start auditing creators together."
+      },
+      "card": {
+        "influencers_one":   "{{count}} creator",
+        "influencers_other": "{{count}} creators",
+        "budget":            "Budget",
+        "period":            "Period",
+        "progress":          "Progress"
+      }
+    },
+    "status": {
+      "active":    "Active",
+      "planning":  "Planning",
+      "paused":    "Paused",
+      "completed": "Completed"
+    },
+    "detail": {
+      "back": "Campaigns",
+      "header": {
+        "industry": "Industry",
+        "period":   "Period",
+        "budget":   "Budget",
+        "posts":    "Posts",
+        "reach":    "Total reach",
+        "sentiment": "Avg sentiment"
+      },
+      "actions": {
+        "generateReport": "Generate Report",
+        "edit":           "Edit campaign"
+      },
+      "participants": {
+        "title":    "Campaign Influencers",
+        "subtitle": "Per-creator summary KPIs",
+        "posts":    "posts",
+        "cost":     "invested"
+      },
+      "benchmark": {
+        "title":    "Benchmarking",
+        "subtitle": "Side-by-side comparison of creators",
+        "columns": {
+          "creator":      "Creator",
+          "totalReach":   "Reach",
+          "organic":      "% Organic",
+          "paid":         "% Paid",
+          "engagement":   "Engagement",
+          "sentiment":    "Sentiment",
+          "score":        "AI Score",
+          "cost":         "Cost"
+        }
+      },
+      "radar": {
+        "title":    "Performance Radar",
+        "subtitle": "Multi-dimensional creator comparison",
+        "axes": {
+          "brandCoherence":  "Brand Coherence",
+          "sentimentIndex":  "Sentiment",
+          "resonanceScore":  "Resonance",
+          "engagement":      "Engagement",
+          "organicReach":    "Organic Reach",
+          "botSafety":       "Bot Safety"
+        }
+      }
+    },
+    "wizard": {
+      "back":         "Back",
+      "title":        "New Campaign",
+      "subtitle":     "Create a campaign in three quick steps.",
+      "stepLabel":    "Step {{step}} of {{total}}",
+      "next":         "Continue",
+      "previous":     "Back",
+      "create":       "Create campaign",
+      "step1": {
+        "label":      "Details",
+        "title":      "Campaign details",
+        "subtitle":   "Define brand, period and budget.",
+        "name":       "Campaign name",
+        "namePh":     "Summer 2026 — Tech Lifestyle",
+        "brand":      "Client brand",
+        "brandPh":    "NovaTech Pro",
+        "industry":   "Industry",
+        "industryPh": "Technology",
+        "startDate":  "Start",
+        "endDate":    "End",
+        "budget":     "Budget (R$)",
+        "budgetPh":   "240000",
+        "description": "Description (optional)",
+        "descriptionPh": "Summary of strategy and campaign objectives..."
+      },
+      "step2": {
+        "label":    "Influencers",
+        "title":    "Select influencers",
+        "subtitle": "Choose the creators that will join this campaign.",
+        "search":   "Search creator by name or @...",
+        "selected_one":   "{{count}} selected",
+        "selected_other": "{{count}} selected",
+        "selectAtLeastOne": "Select at least one influencer."
+      },
+      "step3": {
+        "label":    "Confirmation",
+        "title":    "Review and create",
+        "subtitle": "Verify details before finalizing the campaign.",
+        "totalBudget":      "Total budget",
+        "perInfluencer":    "Avg cost per creator",
+        "estimatedReach":   "Estimated reach",
+        "createdSuccess":   "Campaign created successfully!"
+      },
+      "errors": {
+        "required":      "Required field.",
+        "invalidPeriod": "Start date must be before end date.",
+        "invalidBudget": "Budget must be greater than zero."
+      }
+    }
+  },
   "influenciador": {
     "header": {
       "deepAnalysis":     "DEEP ANALYSIS",
