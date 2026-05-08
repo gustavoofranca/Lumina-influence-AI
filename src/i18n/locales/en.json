@@ -173,6 +173,61 @@
       }
     }
   },
+  "influenciadores": {
+    "title": "Influencers",
+    "subtitle": "Manage and audit the creators connected to your agency.",
+    "addNew": "Add Influencer",
+    "filters": {
+      "searchPlaceholder": "Search by name or @...",
+      "platforms": "Platforms",
+      "allPlatforms": "All",
+      "status": "Status",
+      "allStatuses": "All",
+      "followersRange": "Followers",
+      "rangeAll":   "All",
+      "rangeMicro": "< 100k",
+      "rangeMid":   "100k – 500k",
+      "rangeMacro": "500k – 1M",
+      "rangeMega":  "1M+",
+      "clear": "Clear filters",
+      "results_one": "{{count}} result",
+      "results_other": "{{count}} results"
+    },
+    "columns": {
+      "creator":      "Influencer",
+      "platforms":    "Platforms",
+      "followers":    "Followers",
+      "engagement":   "Engagement",
+      "lastAnalysis": "Last analysis",
+      "status":       "Status"
+    },
+    "status": {
+      "active":     "Active",
+      "monitoring": "Monitor",
+      "risk":       "At risk"
+    },
+    "empty": {
+      "title": "No influencers found",
+      "subtitle": "Adjust filters or clear the search to see all connected creators."
+    },
+    "pagination": {
+      "previous": "Previous",
+      "next":     "Next",
+      "page":     "Page {{page}} of {{total}}"
+    },
+    "addModal": {
+      "title": "Add Influencer",
+      "subtitle": "Link a new creator to your agency. Credentials are never stored in plain text.",
+      "name": "Name",
+      "namePlaceholder": "Marina Costa",
+      "handle": "Creator @",
+      "handlePlaceholder": "marinacosta",
+      "platforms": "Platforms to connect",
+      "selectAtLeastOne": "Select at least one platform.",
+      "oauth": "Link accounts via OAuth",
+      "cancel": "Cancel"
+    }
+  },
   "dashboard": {
     "label": "OVERVIEW",
     "title": "Network Resonance",

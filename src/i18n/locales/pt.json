@@ -173,6 +173,61 @@
       }
     }
   },
+  "influenciadores": {
+    "title": "Influenciadores",
+    "subtitle": "Gerencie e audite os criadores conectados à sua agência.",
+    "addNew": "Adicionar Influenciador",
+    "filters": {
+      "searchPlaceholder": "Buscar por nome ou @...",
+      "platforms": "Plataformas",
+      "allPlatforms": "Todas",
+      "status": "Status",
+      "allStatuses": "Todos",
+      "followersRange": "Seguidores",
+      "rangeAll":   "Todos",
+      "rangeMicro": "< 100k",
+      "rangeMid":   "100k – 500k",
+      "rangeMacro": "500k – 1M",
+      "rangeMega":  "1M+",
+      "clear": "Limpar filtros",
+      "results_one": "{{count}} resultado",
+      "results_other": "{{count}} resultados"
+    },
+    "columns": {
+      "creator":      "Influenciador",
+      "platforms":    "Plataformas",
+      "followers":    "Seguidores",
+      "engagement":   "Engajamento",
+      "lastAnalysis": "Última análise",
+      "status":       "Status"
+    },
+    "status": {
+      "active":     "Ativo",
+      "monitoring": "Monitorar",
+      "risk":       "Em risco"
+    },
+    "empty": {
+      "title": "Nenhum influenciador encontrado",
+      "subtitle": "Ajuste os filtros ou limpe a busca para ver os criadores conectados."
+    },
+    "pagination": {
+      "previous": "Anterior",
+      "next":     "Próximo",
+      "page":     "Página {{page}} de {{total}}"
+    },
+    "addModal": {
+      "title": "Adicionar Influenciador",
+      "subtitle": "Vincule um novo criador à sua agência. As credenciais nunca são armazenadas em texto plano.",
+      "name": "Nome",
+      "namePlaceholder": "Marina Costa",
+      "handle": "@ do criador",
+      "handlePlaceholder": "marinacosta",
+      "platforms": "Plataformas para conectar",
+      "selectAtLeastOne": "Selecione ao menos uma plataforma.",
+      "oauth": "Vincular contas via OAuth",
+      "cancel": "Cancelar"
+    }
+  },
   "dashboard": {
     "label": "OVERVIEW",
     "title": "Network Resonance",
