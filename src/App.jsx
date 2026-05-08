@@ -12,6 +12,7 @@ import Cadastro       from './pages/Cadastro.jsx'
 import RecuperarSenha from './pages/RecuperarSenha.jsx'
 import Dashboard      from './pages/Dashboard.jsx'
 import Influenciadores from './pages/Influenciadores.jsx'
+import Influenciador  from './pages/Influenciador.jsx'
 
 // Placeholders — substituídos nas etapas seguintes
 function Placeholder({ label }) {
@@ -45,7 +46,7 @@ export default function App() {
             <Route index                element={<Navigate to="/app/dashboard" replace />} />
             <Route path="dashboard"     element={<Dashboard />} />
             <Route path="influenciadores"  element={<Influenciadores />} />
-            <Route path="influenciadores/:id" element={<Placeholder label="Influenciador" />} />
+            <Route path="influenciadores/:id" element={<Influenciador />} />
             <Route path="campanhas"     element={<Placeholder label="Campanhas" />} />
             <Route path="campanhas/nova" element={<Placeholder label="Nova Campanha" />} />
             <Route path="campanhas/:id" element={<Placeholder label="Campanha" />} />

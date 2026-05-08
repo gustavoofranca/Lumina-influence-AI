@@ -173,6 +173,119 @@
       }
     }
   },
+  "influenciador": {
+    "header": {
+      "deepAnalysis":     "DEEP ANALYSIS",
+      "sessionId":        "Session ID",
+      "lastAnalysis":     "Última análise em",
+      "rerun":            "Re-run Diagnosis",
+      "share":            "Share Report"
+    },
+    "tabs": {
+      "overview":  "Visão Geral",
+      "posts":     "Posts Analisados",
+      "diagnosis": "Diagnóstico IA",
+      "history":   "Histórico"
+    },
+    "kpis": {
+      "brandCoherence": "Brand Coherence",
+      "sentimentIndex": "Sentiment Index",
+      "safetyRating":   "Safety Rating",
+      "botProbability": "Bot Probability"
+    },
+    "sentiment": {
+      "title":         "Sentiment Heatmap",
+      "subtitle":      "Distribuição emocional dos comentários",
+      "tab24h":        "24H",
+      "tab7d":         "7D",
+      "clustersTitle": "Core Sentiment Clusters",
+      "keywordsTitle": "Keyword Cloud Focus",
+      "clusters": {
+        "technical":  "Technical Enthusiasm",
+        "purchase":   "Purchase Intent",
+        "neutral":    "Neutral Curiosity",
+        "skepticism": "Value Skepticism"
+      }
+    },
+    "audience": {
+      "title":          "Audience Integrity",
+      "subtitle":       "Composição da audiência por autenticidade",
+      "organic":        "Audiência orgânica",
+      "verifiedHumans": "Verified Humans",
+      "suspicious":     "Suspicious Accounts",
+      "bots":           "Confirmed Bots"
+    },
+    "videoAudit": {
+      "title":    "Video Component Audit",
+      "subtitle": "Análise frame-a-frame do reel mais recente",
+      "duration": "00:42",
+      "view":     "Abrir auditoria"
+    },
+    "neuralConfidence": {
+      "title":           "Neural Confidence",
+      "subtitle":        "Confiança do modelo por dimensão",
+      "scriptAccuracy":  "Script Accuracy",
+      "toneMatching":    "Tone Matching",
+      "demographicSync": "Demographic Sync"
+    },
+    "transcript": {
+      "title":    "AI Transcript Highlight",
+      "subtitle": "Trechos-chave detectados pelo modelo",
+      "export":   "Export Text",
+      "segments": {
+        "hook":        "THE HOOK",
+        "exposition":  "EXPOSITION",
+        "valueProp":   "VALUE PROP",
+        "cta":         "CALL TO ACTION"
+      }
+    },
+    "recommendations": {
+      "title":    "Recomendações da IA",
+      "subtitle": "Ações sugeridas para os próximos ciclos",
+      "accept":   "Aceitar",
+      "ignore":   "Ignorar",
+      "accepted": "Aceita",
+      "ignored":  "Ignorada",
+      "priority": {
+        "high":   "Alta prioridade",
+        "medium": "Média prioridade",
+        "low":    "Baixa prioridade"
+      }
+    },
+    "overview": {
+      "title": "Visão Geral",
+      "subtitle": "Métricas principais e tendências do criador.",
+      "metrics": {
+        "followers":     "Seguidores",
+        "engagement":    "Engajamento",
+        "organicReach":  "Alcance orgânico",
+        "paidReach":     "Tráfego pago"
+      }
+    },
+    "posts": {
+      "title":    "Posts Analisados",
+      "subtitle": "Conteúdos auditados nos últimos 30 dias.",
+      "columns": {
+        "post":      "Post",
+        "platform":  "Plataforma",
+        "date":      "Data",
+        "reach":     "Alcance",
+        "sentiment": "Sentimento",
+        "botRisk":   "Risco de bot"
+      }
+    },
+    "history": {
+      "title":    "Histórico de Análises",
+      "subtitle": "Linha do tempo de auditorias deste criador.",
+      "scope":    "Escopo",
+      "viewReport": "Ver relatório"
+    },
+    "notFound": {
+      "title":    "Influenciador não encontrado",
+      "subtitle": "O criador solicitado não está conectado à sua agência.",
+      "back":     "Voltar para a lista"
+    }
+  },
   "influenciadores": {
     "title": "Influenciadores",
     "subtitle": "Gerencie e audite os criadores conectados à sua agência.",

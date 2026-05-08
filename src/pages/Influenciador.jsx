@@ -1,0 +1,65 @@
+import { useState } from 'react'
+import { Link, useParams } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
+import { ArrowLeft, UserX } from 'lucide-react'
+
+import Tabs from '../components/ui/Tabs.jsx'
+import Button from '../components/ui/Button.jsx'
+import InfluenciadorHeader from '../components/influenciador/InfluenciadorHeader.jsx'
+import VisaoGeralTab        from '../components/influenciador/VisaoGeralTab.jsx'
+import PostsAnalisadosTab   from '../components/influenciador/PostsAnalisadosTab.jsx'
+import DiagnosticoTab       from '../components/influenciador/DiagnosticoTab.jsx'
+import HistoricoTab         from '../components/influenciador/HistoricoTab.jsx'
+import { findInfluenciador } from '../mocks/influenciadores.js'
+
+export default function Influenciador() {
+  const { t } = useTranslation()
+  const { id } = useParams()
+  const [tab, setTab] = useState('diagnosis')
+
+  const influenciador = findInfluenciador(id)
+
+  // Influenciador nao encontrado
+  if (!influenciador) {
+    return (
+      <div className="flex min-h-[60vh] flex-col items-center justify-center gap-4 text-center">
+        <span className="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-neutral-800 text-text-muted">
+          <UserX size={22} />
+        </span>
+        <h2 className="font-display text-xl font-bold text-neutral-100">
+          {t('influenciador.notFound.title')}
+        </h2>
+        <p className="max-w-md text-sm text-text-secondary">{t('influenciador.notFound.subtitle')}</p>
+        <Link to="/app/influenciadores">
+          <Button variant="primary" leftIcon={ArrowLeft}>
+            {t('influenciador.notFound.back')}
+          </Button>
+        </Link>
+      </div>
+    )
+  }
+
+  const tabItems = [
+    { value: 'overview',  label: t('influenciador.tabs.overview') },
+    { value: 'posts',     label: t('influenciador.tabs.posts') },
+    { value: 'diagnosis', label: t('influenciador.tabs.diagnosis') },
+    { value: 'history',   label: t('influenciador.tabs.history') },
+  ]
+
+  return (
+    <div className="flex flex-col gap-6">
+      <InfluenciadorHeader influenciador={influenciador} />
+
+      {/* Tabs */}
+      <Tabs items={tabItems} value={tab} onChange={setTab} />
+
+      {/* Conteudo */}
+      <div>
+        {tab === 'overview'  && <VisaoGeralTab        influenciador={influenciador} />}
+        {tab === 'posts'     && <PostsAnalisadosTab />}
+        {tab === 'diagnosis' && <DiagnosticoTab />}
+        {tab === 'history'   && <HistoricoTab />}
+      </div>
+    </div>
+  )
+}

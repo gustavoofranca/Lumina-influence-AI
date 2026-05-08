@@ -1,0 +1,94 @@
+import { useTranslation } from 'react-i18next'
+import { FileSearch, ChevronRight } from 'lucide-react'
+
+import { cn } from '../../lib/cn.js'
+import Card, { CardLabel, CardTitle } from '../ui/Card.jsx'
+import { HISTORICO_ANALISES } from '../../mocks/analise.js'
+
+function formatDate(iso, locale) {
+  try {
+    return new Date(iso).toLocaleDateString(locale === 'pt' ? 'pt-BR' : 'en-US', {
+      day: '2-digit', month: 'short', year: 'numeric',
+    })
+  } catch { return iso }
+}
+
+function ScoreBar({ value, label }) {
+  return (
+    <div className="flex flex-col items-end gap-1">
+      <span className="text-[10px] font-semibold uppercase tracking-label text-text-muted">{label}</span>
+      <div className="flex items-center gap-2">
+        <div className="h-1 w-20 overflow-hidden rounded-full bg-neutral-700/60">
+          <div className="h-full rounded-full bg-gradient-brand" style={{ width: `${value}%` }} />
+        </div>
+        <span className="font-display text-sm font-bold text-neutral-100 tabular-nums">{value}</span>
+      </div>
+    </div>
+  )
+}
+
+export default function HistoricoTab() {
+  const { t, i18n } = useTranslation()
+
+  return (
+    <Card glass>
+      <div className="mb-6">
+        <CardLabel>{t('influenciador.history.title')}</CardLabel>
+        <CardTitle className="mt-1.5">{t('influenciador.history.title')}</CardTitle>
+        <p className="mt-1 text-sm text-text-secondary">{t('influenciador.history.subtitle')}</p>
+      </div>
+
+      {/* Timeline vertical */}
+      <ol className="relative space-y-4 pl-6">
+        {/* Linha vertical da timeline */}
+        <span aria-hidden className="absolute left-2 top-2 bottom-2 w-px bg-gradient-to-b from-primary-500/40 via-primary-500/20 to-transparent" />
+
+        {HISTORICO_ANALISES.map((item, i) => (
+          <li key={item.id} className="relative">
+            {/* Bolinha da timeline */}
+            <span
+              aria-hidden
+              className={cn(
+                'absolute -left-6 top-4 inline-flex h-3 w-3 items-center justify-center rounded-full',
+                i === 0 ? 'bg-primary-500 shadow-[0_0_10px_rgba(124,58,237,0.7)]' : 'bg-neutral-600 ring-2 ring-neutral-900'
+              )}
+            />
+
+            <div className="flex flex-wrap items-center gap-4 rounded-2xl border border-neutral-700/60 bg-neutral-900/40 p-4 transition-colors hover:bg-neutral-800/40">
+              <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary-600/15 text-primary-300 ring-1 ring-inset ring-primary-500/20">
+                <FileSearch size={16} />
+              </span>
+
+              <div className="min-w-0 flex-1">
+                <div className="flex items-center gap-2">
+                  <span className="font-mono text-xs font-semibold text-primary-300">#{item.id}</span>
+                  {i === 0 && (
+                    <span className="inline-flex items-center rounded-full bg-emerald-500/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-emerald-300 ring-1 ring-inset ring-emerald-500/30">
+                      Latest
+                    </span>
+                  )}
+                </div>
+                <div className="mt-0.5 text-sm font-medium text-neutral-200">
+                  {formatDate(item.data, i18n.language)} · {t('influenciador.history.scope')}: {item.escopo}
+                </div>
+              </div>
+
+              <div className="hidden items-center gap-6 sm:flex">
+                <ScoreBar label={t('influenciador.kpis.brandCoherence')} value={item.brandCoherence} />
+                <ScoreBar label={t('influenciador.kpis.sentimentIndex')} value={item.sentimentScore} />
+              </div>
+
+              <button
+                type="button"
+                className="inline-flex items-center gap-1 rounded-lg px-3 py-1.5 text-xs font-semibold text-text-secondary transition-colors hover:bg-neutral-800 hover:text-neutral-100"
+              >
+                {t('influenciador.history.viewReport')}
+                <ChevronRight size={13} />
+              </button>
+            </div>
+          </li>
+        ))}
+      </ol>
+    </Card>
+  )
+}

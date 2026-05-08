@@ -173,6 +173,119 @@
       }
     }
   },
+  "influenciador": {
+    "header": {
+      "deepAnalysis":     "DEEP ANALYSIS",
+      "sessionId":        "Session ID",
+      "lastAnalysis":     "Last analysis on",
+      "rerun":            "Re-run Diagnosis",
+      "share":            "Share Report"
+    },
+    "tabs": {
+      "overview":  "Overview",
+      "posts":     "Analyzed Posts",
+      "diagnosis": "AI Diagnosis",
+      "history":   "History"
+    },
+    "kpis": {
+      "brandCoherence": "Brand Coherence",
+      "sentimentIndex": "Sentiment Index",
+      "safetyRating":   "Safety Rating",
+      "botProbability": "Bot Probability"
+    },
+    "sentiment": {
+      "title":         "Sentiment Heatmap",
+      "subtitle":      "Emotional distribution across comments",
+      "tab24h":        "24H",
+      "tab7d":         "7D",
+      "clustersTitle": "Core Sentiment Clusters",
+      "keywordsTitle": "Keyword Cloud Focus",
+      "clusters": {
+        "technical":  "Technical Enthusiasm",
+        "purchase":   "Purchase Intent",
+        "neutral":    "Neutral Curiosity",
+        "skepticism": "Value Skepticism"
+      }
+    },
+    "audience": {
+      "title":          "Audience Integrity",
+      "subtitle":       "Audience composition by authenticity",
+      "organic":        "Organic audience",
+      "verifiedHumans": "Verified Humans",
+      "suspicious":     "Suspicious Accounts",
+      "bots":           "Confirmed Bots"
+    },
+    "videoAudit": {
+      "title":    "Video Component Audit",
+      "subtitle": "Frame-by-frame analysis of the latest reel",
+      "duration": "00:42",
+      "view":     "Open audit"
+    },
+    "neuralConfidence": {
+      "title":           "Neural Confidence",
+      "subtitle":        "Model confidence per dimension",
+      "scriptAccuracy":  "Script Accuracy",
+      "toneMatching":    "Tone Matching",
+      "demographicSync": "Demographic Sync"
+    },
+    "transcript": {
+      "title":    "AI Transcript Highlight",
+      "subtitle": "Key segments detected by the model",
+      "export":   "Export Text",
+      "segments": {
+        "hook":        "THE HOOK",
+        "exposition":  "EXPOSITION",
+        "valueProp":   "VALUE PROP",
+        "cta":         "CALL TO ACTION"
+      }
+    },
+    "recommendations": {
+      "title":    "AI Recommendations",
+      "subtitle": "Suggested actions for upcoming cycles",
+      "accept":   "Accept",
+      "ignore":   "Ignore",
+      "accepted": "Accepted",
+      "ignored":  "Ignored",
+      "priority": {
+        "high":   "High priority",
+        "medium": "Medium priority",
+        "low":    "Low priority"
+      }
+    },
+    "overview": {
+      "title": "Overview",
+      "subtitle": "Key metrics and creator trends.",
+      "metrics": {
+        "followers":     "Followers",
+        "engagement":    "Engagement",
+        "organicReach":  "Organic reach",
+        "paidReach":     "Paid traffic"
+      }
+    },
+    "posts": {
+      "title":    "Analyzed Posts",
+      "subtitle": "Audited content from the last 30 days.",
+      "columns": {
+        "post":      "Post",
+        "platform":  "Platform",
+        "date":      "Date",
+        "reach":     "Reach",
+        "sentiment": "Sentiment",
+        "botRisk":   "Bot risk"
+      }
+    },
+    "history": {
+      "title":    "Analysis History",
+      "subtitle": "Timeline of audits for this creator.",
+      "scope":    "Scope",
+      "viewReport": "View report"
+    },
+    "notFound": {
+      "title":    "Influencer not found",
+      "subtitle": "The requested creator is not connected to your agency.",
+      "back":     "Back to list"
+    }
+  },
   "influenciadores": {
     "title": "Influencers",
     "subtitle": "Manage and audit the creators connected to your agency.",
