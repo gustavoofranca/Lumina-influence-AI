@@ -173,6 +173,65 @@
       }
     }
   },
+  "dashboard": {
+    "label": "OVERVIEW",
+    "title": "Network Resonance",
+    "liveSync": "LIVE SYNC",
+    "filters": {
+      "period":      "Period",
+      "period7d":    "7 days",
+      "period30d":   "30 days",
+      "period90d":   "90 days",
+      "campaign":    "Campaign",
+      "allCampaigns": "All campaigns"
+    },
+    "kpis": {
+      "roi":          "Total ROI",
+      "engagement":   "Real Engagement",
+      "cac":          "Avg CAC",
+      "cacOptimal":   "Optimal range",
+      "active":       "Active Influencers"
+    },
+    "growth": {
+      "title":     "Growth Trajectory",
+      "subtitle":  "Organic reach vs paid traffic",
+      "organic":   "Organic Reach",
+      "paid":      "Paid Traffic"
+    },
+    "diagnostic": {
+      "label":           "FEATURED DIAGNOSIS",
+      "analysisId":      "Analysis ID",
+      "transcriptLabel": "AI TRANSCRIPTION",
+      "pills": {
+        "retention": "High Retention",
+        "sentiment": "85% Positive Sentiment",
+        "botAlert":  "AI Alert: Bot detection"
+      },
+      "coherenceLabel": "BRAND COHERENCE SCORE",
+      "viewAnalysis":   "View full analysis"
+    },
+    "topNetworks": {
+      "title":    "Top Performing Networks",
+      "subtitle": "Ranked by resonance score in period",
+      "columns": {
+        "creator":         "Influencer",
+        "score":           "Resonance Score",
+        "viralPotential":  "Viral Potential",
+        "status":          "Status"
+      },
+      "viralHigh":   "High",
+      "viralMedium": "Medium",
+      "viralLow":    "Low",
+      "statusActive":     "Active",
+      "statusMonitoring": "Monitor",
+      "statusRisk":       "At risk"
+    },
+    "networkDensity": {
+      "label":    "NETWORK DENSITY",
+      "subtitle": "{{connected}} of {{total}} creators connected",
+      "expand":   "Expand Node Map"
+    }
+  },
   "app": {
     "nav": {
       "dashboard":       "Overview",
