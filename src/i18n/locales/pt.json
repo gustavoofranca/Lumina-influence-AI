@@ -172,5 +172,36 @@
         "about": "Sobre", "blog": "Blog", "careers": "Carreiras", "legal": "Legal"
       }
     }
+  },
+  "auth": {
+    "login": {
+      "title": "Bem-vindo de volta",
+      "subtitle": "Acesse sua conta para continuar.",
+      "email": "E-mail",
+      "password": "Senha",
+      "submit": "Autenticar",
+      "forgotPassword": "Esqueceu a senha?",
+      "noAccount": "Não tem uma conta?",
+      "createAccount": "Criar conta"
+    },
+    "cadastro": {
+      "title": "Comece sua jornada",
+      "subtitle": "Crie sua conta e audite influenciadores com IA.",
+      "name": "Nome completo",
+      "company": "Empresa / Agência",
+      "email": "E-mail corporativo",
+      "password": "Senha",
+      "submit": "Criar Conta",
+      "hasAccount": "Já tem uma conta?",
+      "login": "Entrar"
+    },
+    "recover": {
+      "title": "Recuperar acesso",
+      "subtitle": "Enviaremos um link de redefinição para seu e-mail.",
+      "email": "E-mail cadastrado",
+      "submit": "Enviar link",
+      "backToLogin": "Voltar ao login",
+      "successMessage": "Link enviado! Verifique sua caixa de entrada."
+    }
   }
 }
