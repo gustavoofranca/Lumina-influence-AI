@@ -173,6 +173,142 @@
       }
     }
   },
+  "configuracoes": {
+    "title":    "Settings",
+    "subtitle": "Customize your account, agency and preferences.",
+    "savedToast": "Changes saved successfully",
+    "nav": {
+      "perfil":        "Profile",
+      "agencia":       "Agency",
+      "integracoes":   "Integrations",
+      "equipe":        "Team",
+      "plano":         "Plan",
+      "preferencias":  "Preferences"
+    },
+    "save":   "Save changes",
+    "cancel": "Cancel",
+    "perfil": {
+      "title":        "Personal data",
+      "subtitle":     "Update your profile information.",
+      "name":         "Full name",
+      "email":        "Email",
+      "role":         "Role",
+      "phone":        "Phone",
+      "avatarLabel":  "Profile picture",
+      "changeAvatar": "Change photo",
+      "removeAvatar": "Remove"
+    },
+    "agencia": {
+      "title":       "Agency data",
+      "subtitle":    "Tax and contact information.",
+      "name":        "Legal name",
+      "tradeName":   "Trade name",
+      "cnpj":        "Tax ID",
+      "website":     "Website",
+      "industry":    "Main industry",
+      "address":     "Address",
+      "description": "Description"
+    },
+    "integracoes": {
+      "title":     "Integrations",
+      "subtitle":  "Connect platforms via official OAuth to audit creators in real time.",
+      "connected":     "Connected",
+      "disconnected":  "Not connected",
+      "lastSync":      "Last sync",
+      "scopes":        "Permissions",
+      "connect":       "Connect account",
+      "disconnect":    "Disconnect",
+      "addNew":        "Connect new account"
+    },
+    "equipe": {
+      "title":     "Team",
+      "subtitle":  "Manage agency members and permissions.",
+      "invite":    "Invite member",
+      "active_one":   "{{count}} active",
+      "active_other": "{{count}} active",
+      "pending_one":   "{{count}} pending",
+      "pending_other": "{{count}} pending",
+      "columns": {
+        "member":   "Member",
+        "role":     "Role",
+        "status":   "Status",
+        "joinedAt": "Joined on"
+      },
+      "statusActive":  "Active",
+      "statusPending": "Pending",
+      "remove":        "Remove",
+      "roles": {
+        "admin":   "Administrator",
+        "manager": "Manager",
+        "analyst": "Analyst",
+        "viewer":  "Read only"
+      },
+      "inviteModal": {
+        "title":     "Invite new member",
+        "subtitle":  "Send an email invitation. The member will receive instructions to create their account.",
+        "email":     "Email",
+        "emailPh":   "new.member@agency.com",
+        "roleLabel": "Agency role",
+        "send":      "Send invitation"
+      }
+    },
+    "plano": {
+      "title":       "Plan and billing",
+      "subtitle":    "Manage your subscription and usage limits.",
+      "current":     "Current plan",
+      "renewsOn":    "Renews on",
+      "usage": {
+        "title":        "Current month usage",
+        "subtitle":     "Renewed monthly per billing cycle.",
+        "influencers":  "Monitored influencers",
+        "analyses":     "AI analyses run",
+        "reports":      "Reports generated",
+        "of":           "of"
+      },
+      "actions": {
+        "upgrade":       "Upgrade to Enterprise",
+        "manageBilling": "Manage billing",
+        "cancel":        "Cancel subscription"
+      }
+    },
+    "preferencias": {
+      "title":    "Preferences",
+      "subtitle": "Language, notifications and timezone.",
+      "language": {
+        "title":    "Interface language",
+        "subtitle": "Applies immediately across all screens."
+      },
+      "timezone": {
+        "title":    "Timezone",
+        "subtitle": "Sets the reference for displayed dates and times."
+      },
+      "theme": {
+        "title":    "Appearance",
+        "subtitle": "Dark theme is the only one available in this version.",
+        "dark":     "Dark"
+      },
+      "notifications": {
+        "title":    "Notifications",
+        "subtitle": "How you want to be notified.",
+        "email": {
+          "label": "Email — reports and critical alerts",
+          "desc":  "Receive important notifications directly in your inbox."
+        },
+        "inApp": {
+          "label": "In-app notifications",
+          "desc":  "Topbar bell shows new analyses and updates."
+        },
+        "weekly": {
+          "label": "Weekly digest",
+          "desc":  "Every Monday, a summary of key metrics."
+        },
+        "alerts": {
+          "label": "Bot detection alerts",
+          "desc":  "Notify immediately when the model detects suspicious activity."
+        }
+      }
+    }
+  },
   "relatorios": {
     "list": {
       "title":     "Reports",

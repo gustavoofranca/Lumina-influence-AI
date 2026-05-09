@@ -18,6 +18,7 @@ import Campanha       from './pages/Campanha.jsx'
 import NovaCampanha   from './pages/NovaCampanha.jsx'
 import Relatorios     from './pages/Relatorios.jsx'
 import NovoRelatorio  from './pages/NovoRelatorio.jsx'
+import Configuracoes  from './pages/Configuracoes.jsx'
 
 // Placeholders — substituídos nas etapas seguintes
 function Placeholder({ label }) {
@@ -58,8 +59,8 @@ export default function App() {
             <Route path="diagnostico"   element={<Placeholder label="Diagnóstico IA" />} />
             <Route path="relatorios"    element={<Relatorios />} />
             <Route path="relatorios/novo" element={<NovoRelatorio />} />
-            <Route path="configuracoes" element={<Placeholder label="Configurações" />} />
-            <Route path="configuracoes/:tab" element={<Placeholder label="Configurações" />} />
+            <Route path="configuracoes" element={<Configuracoes />} />
+            <Route path="configuracoes/:tab" element={<Configuracoes />} />
             <Route path="suporte"       element={<Placeholder label="Suporte" />} />
           </Route>
 

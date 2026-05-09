@@ -173,6 +173,142 @@
       }
     }
   },
+  "configuracoes": {
+    "title":    "Configurações",
+    "subtitle": "Personalize sua conta, agência e preferências.",
+    "savedToast": "Alterações salvas com sucesso",
+    "nav": {
+      "perfil":        "Perfil",
+      "agencia":       "Agência",
+      "integracoes":   "Integrações",
+      "equipe":        "Equipe",
+      "plano":         "Plano",
+      "preferencias":  "Preferências"
+    },
+    "save":   "Salvar alterações",
+    "cancel": "Cancelar",
+    "perfil": {
+      "title":        "Dados pessoais",
+      "subtitle":     "Atualize suas informações de perfil.",
+      "name":         "Nome completo",
+      "email":        "E-mail",
+      "role":         "Cargo",
+      "phone":        "Telefone",
+      "avatarLabel":  "Foto de perfil",
+      "changeAvatar": "Trocar foto",
+      "removeAvatar": "Remover"
+    },
+    "agencia": {
+      "title":       "Dados da agência",
+      "subtitle":    "Informações fiscais e de contato.",
+      "name":        "Razão social",
+      "tradeName":   "Nome fantasia",
+      "cnpj":        "CNPJ",
+      "website":     "Site",
+      "industry":    "Setor principal",
+      "address":     "Endereço",
+      "description": "Descrição"
+    },
+    "integracoes": {
+      "title":     "Integrações",
+      "subtitle":  "Conecte plataformas via OAuth oficial para auditar criadores em tempo real.",
+      "connected":     "Conectado",
+      "disconnected":  "Não conectado",
+      "lastSync":      "Última sincronização",
+      "scopes":        "Permissões",
+      "connect":       "Conectar conta",
+      "disconnect":    "Desconectar",
+      "addNew":        "Conectar nova conta"
+    },
+    "equipe": {
+      "title":     "Equipe",
+      "subtitle":  "Gerencie membros e permissões da agência.",
+      "invite":    "Convidar membro",
+      "active_one":   "{{count}} ativo",
+      "active_other": "{{count}} ativos",
+      "pending_one":   "{{count}} pendente",
+      "pending_other": "{{count}} pendentes",
+      "columns": {
+        "member":   "Membro",
+        "role":     "Cargo",
+        "status":   "Status",
+        "joinedAt": "Entrou em"
+      },
+      "statusActive":  "Ativo",
+      "statusPending": "Pendente",
+      "remove":        "Remover",
+      "roles": {
+        "admin":   "Administrador",
+        "manager": "Gestor",
+        "analyst": "Analista",
+        "viewer":  "Apenas leitura"
+      },
+      "inviteModal": {
+        "title":     "Convidar novo membro",
+        "subtitle":  "Envie um convite por e-mail. O membro receberá instruções para criar a conta.",
+        "email":     "E-mail",
+        "emailPh":   "novo.membro@agencia.com",
+        "roleLabel": "Cargo na agência",
+        "send":      "Enviar convite"
+      }
+    },
+    "plano": {
+      "title":       "Plano e cobrança",
+      "subtitle":    "Gerencie sua assinatura e limites de uso.",
+      "current":     "Plano atual",
+      "renewsOn":    "Renova em",
+      "usage": {
+        "title":        "Uso no mês corrente",
+        "subtitle":     "Renovado mensalmente conforme o ciclo de cobrança.",
+        "influencers":  "Influenciadores monitorados",
+        "analyses":     "Análises IA realizadas",
+        "reports":      "Relatórios gerados",
+        "of":           "de"
+      },
+      "actions": {
+        "upgrade":       "Upgrade para Enterprise",
+        "manageBilling": "Gerenciar cobrança",
+        "cancel":        "Cancelar assinatura"
+      }
+    },
+    "preferencias": {
+      "title":    "Preferências",
+      "subtitle": "Idioma, notificações e fuso horário.",
+      "language": {
+        "title":    "Idioma da interface",
+        "subtitle": "Aplica-se imediatamente em todas as telas."
+      },
+      "timezone": {
+        "title":    "Fuso horário",
+        "subtitle": "Define a referência das datas e horas exibidas."
+      },
+      "theme": {
+        "title":    "Aparência",
+        "subtitle": "O tema escuro é o único disponível nesta versão.",
+        "dark":     "Escuro"
+      },
+      "notifications": {
+        "title":    "Notificações",
+        "subtitle": "Como você quer ser avisado.",
+        "email": {
+          "label": "E-mail — relatórios e alertas críticos",
+          "desc":  "Receba notificações importantes diretamente no seu e-mail."
+        },
+        "inApp": {
+          "label": "Notificações no app",
+          "desc":  "Sino na topbar mostra novas análises e atualizações."
+        },
+        "weekly": {
+          "label": "Resumo semanal",
+          "desc":  "Toda segunda-feira, um sumário das principais métricas."
+        },
+        "alerts": {
+          "label": "Alertas de bot detection",
+          "desc":  "Avisar imediatamente quando o modelo detectar atividade suspeita."
+        }
+      }
+    }
+  },
   "relatorios": {
     "list": {
       "title":     "Relatórios",

@@ -1,0 +1,93 @@
+import { useState } from 'react'
+import { Link, Navigate, useParams } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
+import { User, Building2, Plug, Users, CreditCard, Settings2 } from 'lucide-react'
+
+import { cn } from '../lib/cn.js'
+import Toast from '../components/ui/Toast.jsx'
+import PerfilSection        from '../components/configuracoes/PerfilSection.jsx'
+import AgenciaSection       from '../components/configuracoes/AgenciaSection.jsx'
+import IntegracoesSection   from '../components/configuracoes/IntegracoesSection.jsx'
+import EquipeSection        from '../components/configuracoes/EquipeSection.jsx'
+import PlanoSection         from '../components/configuracoes/PlanoSection.jsx'
+import PreferenciasSection  from '../components/configuracoes/PreferenciasSection.jsx'
+
+const TABS = [
+  { key: 'perfil',       icon: User,       Component: PerfilSection },
+  { key: 'agencia',      icon: Building2,  Component: AgenciaSection },
+  { key: 'integracoes',  icon: Plug,       Component: IntegracoesSection },
+  { key: 'equipe',       icon: Users,      Component: EquipeSection },
+  { key: 'plano',        icon: CreditCard, Component: PlanoSection },
+  { key: 'preferencias', icon: Settings2,  Component: PreferenciasSection },
+]
+
+const VALID_TABS = TABS.map((t) => t.key)
+
+export default function Configuracoes() {
+  const { t } = useTranslation()
+  const { tab } = useParams()
+  const [toastOpen, setToastOpen] = useState(false)
+
+  // Sem tab → redireciona para perfil
+  if (!tab) return <Navigate to="/app/configuracoes/perfil" replace />
+  // Tab inválida → também redireciona
+  if (!VALID_TABS.includes(tab)) return <Navigate to="/app/configuracoes/perfil" replace />
+
+  const ActiveSection = TABS.find((s) => s.key === tab).Component
+
+  return (
+    <div className="flex flex-col gap-6">
+      {/* Header */}
+      <header>
+        <h1 className="font-display text-3xl font-bold text-neutral-100 lg:text-4xl">
+          {t('configuracoes.title')}
+        </h1>
+        <p className="mt-1.5 text-sm text-text-secondary">{t('configuracoes.subtitle')}</p>
+      </header>
+
+      {/* Layout: nav lateral + conteudo */}
+      <div className="grid gap-6 lg:grid-cols-[220px_1fr]">
+        {/* Sub-nav */}
+        <nav>
+          <ul className="space-y-1">
+            {TABS.map((s) => {
+              const Icon = s.icon
+              const active = s.key === tab
+              return (
+                <li key={s.key}>
+                  <Link
+                    to={`/app/configuracoes/${s.key}`}
+                    className={cn(
+                      'group relative flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-medium transition-all duration-150',
+                      active
+                        ? 'bg-primary-600/20 text-neutral-100'
+                        : 'text-text-secondary hover:bg-neutral-800 hover:text-neutral-100'
+                    )}
+                  >
+                    {active && (
+                      <span className="absolute left-0 top-1/2 h-5 w-0.5 -translate-y-1/2 rounded-r-full bg-primary-500 shadow-[0_0_8px_rgba(124,58,237,0.8)]" />
+                    )}
+                    <Icon size={16} className={active ? 'text-primary-400' : 'text-neutral-500 group-hover:text-neutral-300'} />
+                    {t(`configuracoes.nav.${s.key}`)}
+                  </Link>
+                </li>
+              )
+            })}
+          </ul>
+        </nav>
+
+        {/* Conteudo */}
+        <main className="min-w-0">
+          <ActiveSection onSave={() => setToastOpen(true)} />
+        </main>
+      </div>
+
+      <Toast
+        open={toastOpen}
+        onClose={() => setToastOpen(false)}
+        message={t('configuracoes.savedToast')}
+        type="success"
+      />
+    </div>
+  )
+}
