@@ -1,4 +1,11 @@
 {
+  "notFound": {
+    "label":     "ERRO 404 · NEURAL DRIFT",
+    "title":     "Página não encontrada",
+    "subtitle":  "A rota solicitada não está conectada à malha neural deste produto. Verifique a URL ou volte para o painel principal.",
+    "backHome":  "Voltar ao início",
+    "goDashboard": "Abrir dashboard"
+  },
   "app": {
     "name": "Lumina Influence AI",
     "tagline": "Pare de queimar verba com métricas de vaidade.",

@@ -1,4 +1,11 @@
 {
+  "notFound": {
+    "label":     "ERROR 404 · NEURAL DRIFT",
+    "title":     "Page not found",
+    "subtitle":  "The requested route is not connected to this product's neural mesh. Check the URL or go back to the main panel.",
+    "backHome":  "Back to home",
+    "goDashboard": "Open dashboard"
+  },
   "app": {
     "name": "Lumina Influence AI",
     "tagline": "Stop burning budget on vanity metrics.",
