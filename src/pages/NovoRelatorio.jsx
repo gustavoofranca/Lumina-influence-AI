@@ -253,14 +253,16 @@ function Step4Preview({ campaignId, period, influencerIds, sections, onExport, t
         </Button>
       </Card>
 
-      {/* Frame escuro com paginas claras dentro */}
-      <div className="rounded-3xl border border-primary/10 bg-neutral-950/60 p-6 lg:p-10">
-        <ReportPreview
-          campaignId={campaignId}
-          period={period}
-          influencerIds={[...influencerIds]}
-          sections={[...sections]}
-        />
+      {/* Frame escuro com paginas claras dentro (overflow-x para mobile) */}
+      <div className="overflow-x-auto rounded-3xl border border-primary/10 bg-neutral-950/60 p-4 sm:p-6 lg:p-10">
+        <div className="min-w-[680px]">
+          <ReportPreview
+            campaignId={campaignId}
+            period={period}
+            influencerIds={[...influencerIds]}
+            sections={[...sections]}
+          />
+        </div>
       </div>
     </div>
   )

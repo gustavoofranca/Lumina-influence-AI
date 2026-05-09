@@ -45,10 +45,37 @@ export default function Configuracoes() {
         <p className="mt-1.5 text-sm text-text-secondary">{t('configuracoes.subtitle')}</p>
       </header>
 
-      {/* Layout: nav lateral + conteudo */}
-      <div className="grid gap-6 lg:grid-cols-[220px_1fr]">
-        {/* Sub-nav */}
-        <nav>
+      {/* Sub-nav mobile (pills horizontais scrollaveis) */}
+      <nav className="-mx-2 overflow-x-auto px-2 lg:hidden">
+        <ul className="flex w-max items-center gap-2 pb-1">
+          {TABS.map((s) => {
+            const Icon = s.icon
+            const active = s.key === tab
+            return (
+              <li key={s.key}>
+                <Link
+                  to={`/app/configuracoes/${s.key}`}
+                  className={cn(
+                    'inline-flex items-center gap-2 rounded-2xl px-3 py-2 text-sm font-semibold transition-all duration-150',
+                    'ring-1 ring-inset whitespace-nowrap',
+                    active
+                      ? 'bg-primary-600 text-white shadow-glow-soft ring-primary-400'
+                      : 'bg-neutral-800/60 text-text-secondary ring-neutral-700 hover:bg-neutral-700 hover:text-neutral-100'
+                  )}
+                >
+                  <Icon size={14} />
+                  {t(`configuracoes.nav.${s.key}`)}
+                </Link>
+              </li>
+            )
+          })}
+        </ul>
+      </nav>
+
+      {/* Layout desktop: nav lateral + conteudo */}
+      <div className="lg:grid lg:gap-6 lg:grid-cols-[220px_1fr]">
+        {/* Sub-nav vertical (somente desktop) */}
+        <nav className="hidden lg:block">
           <ul className="space-y-1">
             {TABS.map((s) => {
               const Icon = s.icon

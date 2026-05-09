@@ -130,14 +130,15 @@ export default function Topbar({ onMenuClick }) {
         className="lg:hidden"
       />
 
-      {/* Search central */}
-      <div className="flex-1 max-w-md">
+      {/* Search central — escondido em telas muito pequenas */}
+      <div className="hidden flex-1 max-w-md sm:block">
         <Search
           placeholder={t('app.topbar.searchPlaceholder')}
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
       </div>
+      <div className="flex-1 sm:hidden" />{/* spacer mobile */}
 
       {/* Direita */}
       <div className="ml-auto flex items-center gap-1.5">

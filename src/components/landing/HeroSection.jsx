@@ -32,8 +32,8 @@ export default function HeroSection() {
           <StatusIndicator label={t('landing.hero.label')} color="primary" />
 
           <h1 className={cn(
-            'font-display text-5xl font-extrabold leading-[1.05] tracking-tight',
-            'text-gradient-brand xl:text-6xl'
+            'font-display text-4xl font-extrabold leading-[1.05] tracking-tight',
+            'text-gradient-brand sm:text-5xl xl:text-6xl'
           )}>
             {t('landing.hero.h1')}
           </h1>
