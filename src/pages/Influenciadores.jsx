@@ -123,7 +123,6 @@ export default function Influenciadores() {
       <AdicionarInfluenciadorModal
         open={modalOpen}
         onClose={() => setModalOpen(false)}
-        onSubmit={(payload) => console.log('add influenciador', payload)}
       />
     </div>
   )

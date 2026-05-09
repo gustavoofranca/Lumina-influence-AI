@@ -500,7 +500,7 @@ export default function DesignSystem() {
               <Table
                 columns={TABLE_COLUMNS(t)}
                 data={TABLE_DATA}
-                onRowClick={(row) => console.log('row clicked', row)}
+                onRowClick={() => {}}
                 emptyState={t('ds.tableEmpty')}
               />
             </Card>
