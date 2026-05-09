@@ -173,6 +173,100 @@
       }
     }
   },
+  "relatorios": {
+    "list": {
+      "title":     "Relatórios",
+      "subtitle":  "Histórico de relatórios gerados e modelos prontos para exportar.",
+      "newButton": "Novo Relatório",
+      "search":    "Buscar por nome ou campanha...",
+      "empty": {
+        "title":    "Nenhum relatório ainda",
+        "subtitle": "Crie seu primeiro relatório a partir de uma campanha existente."
+      },
+      "columns": {
+        "name":      "Relatório",
+        "campaign":  "Campanha",
+        "period":    "Período",
+        "createdAt": "Gerado em",
+        "pages":     "Páginas",
+        "generatedBy": "Gerado por"
+      },
+      "actions": {
+        "preview":  "Visualizar",
+        "download": "Baixar PDF"
+      }
+    },
+    "wizard": {
+      "back":       "Relatórios",
+      "title":      "Novo Relatório",
+      "subtitle":   "Monte um relatório a partir de uma campanha em quatro passos.",
+      "next":       "Continuar",
+      "previous":   "Voltar",
+      "generate":   "Gerar relatório",
+      "exportPdf":  "Exportar PDF",
+      "exportSoon": "Funcionalidade disponível em breve",
+      "exportSoonDesc": "A exportação para PDF será habilitada na próxima versão.",
+      "step1": {
+        "label":    "Campanha",
+        "title":    "Escolha a campanha",
+        "subtitle": "Selecione qual campanha será a base deste relatório.",
+        "empty":    "Nenhuma campanha disponível."
+      },
+      "step2": {
+        "label":      "Período & Criadores",
+        "title":      "Período e influenciadores",
+        "subtitle":   "Defina o intervalo do relatório e quais criadores incluir.",
+        "startDate":  "Data inicial",
+        "endDate":    "Data final",
+        "creators":   "Influenciadores incluídos",
+        "all":        "Todos os participantes da campanha",
+        "selected_one":   "{{count}} criador",
+        "selected_other": "{{count}} criadores"
+      },
+      "step3": {
+        "label":    "Seções",
+        "title":    "Seções do relatório",
+        "subtitle": "Escolha o que incluir no documento exportado.",
+        "sections": {
+          "kpis":            "KPIs principais",
+          "kpisDesc":        "ROI, engajamento, CAC e contagem de criadores ativos",
+          "growth":          "Gráfico de crescimento",
+          "growthDesc":      "Alcance orgânico vs tráfego pago no período selecionado",
+          "benchmark":       "Tabela de benchmarking",
+          "benchmarkDesc":   "Comparativo lado a lado dos criadores incluídos",
+          "diagnostic":      "Diagnóstico IA",
+          "diagnosticDesc":  "Análise qualitativa, sentimento e detecção de bots",
+          "recommendations":     "Recomendações da IA",
+          "recommendationsDesc": "Ações sugeridas para os próximos ciclos"
+        }
+      },
+      "step4": {
+        "label":    "Preview",
+        "title":    "Preview do relatório",
+        "subtitle": "Revise o conteúdo antes de exportar."
+      },
+      "errors": {
+        "selectCampaign": "Selecione uma campanha para continuar.",
+        "selectCreators": "Selecione ao menos um criador.",
+        "selectSection":  "Selecione ao menos uma seção."
+      }
+    },
+    "preview": {
+      "page":            "Página",
+      "of":              "de",
+      "title":           "Relatório de Performance",
+      "preparedFor":     "Preparado para",
+      "preparedBy":      "Preparado por",
+      "period":          "Período coberto",
+      "executiveSummary": "Sumário executivo",
+      "kpisTitle":       "Indicadores principais",
+      "growthTitle":     "Trajetória de crescimento",
+      "benchmarkTitle":  "Benchmarking de criadores",
+      "diagnosticTitle": "Diagnóstico qualitativo",
+      "recommendationsTitle": "Recomendações da IA",
+      "footerNote":      "Documento gerado por Lumina Influence AI · Confidencial"
+    }
+  },
   "campanhas": {
     "list": {
       "title":     "Campanhas",
